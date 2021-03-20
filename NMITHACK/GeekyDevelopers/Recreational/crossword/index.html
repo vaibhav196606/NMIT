@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="style.css">
+		<title>Crossword</title>
+		<script src="https://kit.fontawesome.com/93fd6bbb87.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body bgcolor="green" id="mainContent">
+		<div class="container">
+			<header>
+      <h1 class="text-left-right mt-3">
+      <span class="left-text"><a href="../../home/index.html" style="color:black;"><i class="fa fa-home" aria-hidden="true"></i></a></span>
+      संस्कृत <i class="fas fa-gopuram"></i>
+      </h1>
+</header>
+			<div class="container justify-content-center row" id="buttonBox">
+                <h3 class="col-md-11 mb-2 text-center" style="color: white;">CROSSWORD PUZZLE</h3>
+                <table class="wrapper col-md-3 col-sm-2">
+                    <tr>
+                      <td>1
+                        <input type="text" maxlength="1" id="myId01" disabled>
+                      </td>
+                      <td>2
+                        <input type="text" maxlength="1" id="myId02" disabled>
+                      </td>
+                      <td>3
+                        <input type="text" maxlength="1" id="myId03">
+                      </td>
+                      <td>4
+                        <input type="text" maxlength="1" id="myId04" disabled>
+                      </td>
+                      <td>5
+                        <input type="text" maxlength="1" id="myId05" disabled>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6
+                        <input type="text" maxlength="1" id="myId11" disabled>
+                      </td>
+                      <td>7
+                        <input type="text" maxlength="1" id="myId12">
+                      </td>
+                      <td>8
+                        <input type="text" maxlength="1" id="myId13">
+                      </td>
+                      <td>9
+                        <input type="text" maxlength="1" id="myId14">
+                      </td>
+                      <td>10
+                        <input type="text" maxlength="1" id="myId15">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>11
+                        <input type="text" maxlength="1" id="myId21" disabled>
+                      </td>
+                      <td>12
+                        <input type="text" maxlength="1" id="myId22" disabled>
+                      </td>
+                      <td>13
+                        <input type="text" maxlength="1" id="myId23">
+                      </td>
+                      <td>14
+                        <input type="text" maxlength="1" id="myId24" disabled>
+                      </td>
+                      <td>15
+                        <input type="text" maxlength="1" id="myId25">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>16
+                        <input type="text" maxlength="1" id="myId31">
+                      </td>
+                      <td>17
+                        <input type="text" maxlength="1" id="myId32">
+                      </td>
+                      <td>18
+                        <input type="text" maxlength="1" id="myId33">
+                      </td>
+                      <td>19
+                        <input type="text" maxlength="1" id="myId34" disabled>
+                      </td>
+                      <td>20
+                        <input type="text" maxlength="1" id="myId35">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>21
+                        <input type="text" maxlength="1" id="myId41">
+                      </td>
+                      <td>22
+                        <input type="text" maxlength="1" id="myId42" disabled>
+                      </td>
+                      <td>23
+                        <input type="text" maxlength="1" id="myId43" disabled>
+                      </td>
+                      <td>24
+                        <input type="text" maxlength="1" id="myId44" disabled>
+                      </td>
+                      <td>25
+                        <input type="text" maxlength="1" id="myId45" disabled>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="col-md-9 text-center" style="color: white;">
+                    <p><span id="timer">0</span> seconds</p>
+                    <h3>Across</h3>
+                    <p>7: कङ्कत
+                      <button>Reveal</button><span>comb</span></p>
+                    <p>16: उलूक
+                      <button>Reveal</button><span>owl</span></p>
+                    <h3>Down</h3>
+                    <p>3: शिशिर
+                      <button>Reveal</button><span>cool</span></p>
+                    <p>10: किन्तु
+                      <button>Reveal</button><span>but</span></p>
+                    <p>16: अथवा
+                      <button>Reveal</button><span>or</span></p>
+                  </div>
+                  <div class="col-md-10 row justify-content-center">
+                    <a href="index.html" class="btn btn-warning col-md-3 col-sm-6 mt-3 ml-1" style="font-weight: 600;">Reset <i class="fas fa-redo-alt"></i></a>
+                    
+                </div>
+			</div>
+		</div>
+		
+		
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>    
+	</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    font-family: Open Sans;
+    text-transform: uppercase;
+}
+#mainContent{
+	background-color:#74c69d;
+}
+#buttonBox{
+	margin: 150px auto;
+	padding:5%;
+	background-color:#1b4332;
+	border-radius:10px;
+}
+#quizContentdisplay{
+	padding:0px auto;
+}
+h1 {
+	font-family: 'Times New Roman', serif;
+}
+header {
+  border-bottom: 1px solid #0d122b;
+  margin-bottom: 2em;
+}

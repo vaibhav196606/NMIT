@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pick And Drop</title>
+	<script src="https://kit.fontawesome.com/93fd6bbb87.js" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<style>
+body {
+  background-image: url("../../../images/letters.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body id="mainContent" style="text-align:center;">
+<!-- partial:index.partial.html -->
+	<header>
+      <h1 class="text-left-right mt-3">
+      <span class="left-text"><a href="../../home/index.html" style="color:black;"><i class="fa fa-home" aria-hidden="true"></i></a></span>
+      संस्कृत <i class="fas fa-gopuram"></i>
+      </h1>
+</header>
+	<div class="quiz-wrapper">
+		
+		<div style="text-align:center;height:50px;background-color:#19286C;margin-bottom:10px">
+			<p class="question-description" class="row text-center" style="padding:12px"> Drag and drop each word segment to its correct place.</p>			
+		</div>
+			<ul class="options">
+		<!-- 		<li class="title">Segments</li> -->
+		<li class="option" data-target="राष्ट्रिय">राष्ट्रिय</li>
+		<li class="option" data-target="शरीरम्">शरीरम्</li>
+		<li class="option" data-target="yant">मध्याह्ने</li>
+		<li class="option" data-target="elf">भवनानि</li>
+		<li class="option" data-target="ing">गच्छति</li>
+		<li class="option" data-target="aaa">रोगाः</li>
+		<li class="option" data-target="नद्य:">नद्य:</li>
+		<li class="option" data-target="आगच्छति">आगच्छति</li>
+		<li class="option" data-target="सीदति">सीदति </li>
+		<li class="option" data-target="निर्माणं">निर्माणं</li>
+		<li class="option" data-target="bbb">प्रसिद्धः</li>
+		<li class="option" data-target="कर्षति ">कर्षति </li>
+		<li class="option" data-target="चतुर्">चतुर्</li>
+		<li class="option" data-target="कृन्तति">कृन्तति</li>
+		<li class="option" data-target="elf">भवनानि</li>
+					</ul>
+            <div class="answers">
+                <ol>
+            <li>भ्रमण-धावन-क्रीडनादिभिः<span class="target" data-accept="शरीरम्">&nbsp;</span>श्रान्तकरणम् व्यायामः कथ्यते</li>
+            <br><li> गौविशिन: उर्वरकस्य   <span class="target" data-accept="निर्माणं">&nbsp;</span>भवति तथाञ्च उपलेपनं ईंधनं कार्ये</li>
+            <!-- <br><li>अत्र गंगा, यमुना, गोदावरी, ब्रह्यपुत्र प्रभृतयः <span class="target" data-accept="नद्य:">&nbsp;</span> अमृतोपम् तोयं वहन्ति </li> -->
+            <br><li>अस्य देशस्य  <span class="target" data-accept="राष्ट्रिय">&nbsp;</span> हिन्दी या संस्कृतभाषायाः आत्मजा अस्ति</li>
+            <br><li>गौमूत्रेण च अनेके <span class="target" data-accept="aaa">&nbsp;</span> नृश्यन्ति । गौ: महान उपकारी पशुः</li>
+            <br><li>होलिकोत्सवः सर्वजनानां <span class="target" data-accept="bbb">&nbsp;</span>कृते प्रियः प्रसिद्धः उत्सवः अस्ति </li>
+                </ol>
+            </div>
+			</div>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script><script  src="./pickDrop.js"></script>
+
+</body>
+</html>

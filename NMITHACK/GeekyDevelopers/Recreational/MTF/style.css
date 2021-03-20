@@ -1,0 +1,39 @@
+body {
+    font-family: Open Sans;
+    text-transform: uppercase;
+}
+#mainContent{
+	background-color:#74c69d;
+}
+img{
+    height:10%;
+    width:10%;
+}
+input{
+	width:50%;
+}
+#buttonBox{
+	margin: 150px auto;
+	padding:5%;
+	background-color:#1b4332;
+    border-radius:10px;
+    transition: background-color 0.5s ease;
+}
+#quizContentdisplay{
+	padding:0px auto;
+}
+h1 {
+	font-family: 'Times New Roman', serif;
+}
+.text-left-right {
+    text-align: center;
+    position: relative;
+}
+.left-text {
+    left: 0;
+    position: absolute;
+}
+header {
+  border-bottom: 1px solid #0d122b;
+  margin-bottom: 2em;
+}
