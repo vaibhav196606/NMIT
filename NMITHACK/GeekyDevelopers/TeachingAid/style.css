@@ -33,6 +33,20 @@
         padding: 5%;
         margin-bottom: 5%;
       }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  
+}
+
+.transform {
+  animation: 5s ease-out 0s 1 slideInFromLeft;
+  background-color: #45CEE0;
+}
       .navbar-fixed .navbar-toggle .icon-bar{
         background-color: white;
       }
